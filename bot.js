@@ -44,7 +44,7 @@ client.on('message', msg => {
     msg.reply('Efendim :blush:');
   }
   if (msg.content === 'naber') {
-    msg.reply('İyilik.Sen Naber? :upside_down:');
+    msg.reply('İyilik.Senden Naber? :upside_down:');
   }
   if (msg.content === 'Selamun aleyküm') {
     msg.reply('Aleyküm Selam');
