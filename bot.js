@@ -1,28 +1,57 @@
-const Discord = require('discord.js');
+﻿const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-  console.log(`${client.user.tag} Olarak Giriş Yapıldı!`);
-  client.user.setActivity(`PLAYERUNKNOWN'S BATTLEGROUNDS`, { type: 'PLAYING' });
-
+  console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.on('message', message => {
-  if (message.content === 'bandashki') {
-    message.channel.send('blatata');
+client.on('message', msg => {
+  if (msg.content === 'sa') {
+    msg.channel.send('Aleyküm Selam');
+  }
+
+  if (msg.content === 'Selamın Aleyküm') {
+    msg.reply('Aleyküm Selam');
+  }
+    if (msg.content === 'sea') {
+    msg.reply('Aleyküm Selam');
+  }
+    if (msg.content === 'selamün aleyküm') {
+    msg.reply('Aleyküm Selam');
+  }
+    if (msg.content === 'selam') {
+    msg.reply('Aleyküm Selam');
+  }
+    if (msg.content === 'selamlar') {
+    msg.reply('Aleyküm Selam');
+  }
+  if (msg.content === 'iyi') {
+    msg.reply('Süper O Zaman! :blush:');
+  }
+  if (msg.content === 'kötü') {
+    msg.reply(' Niye Yaa? Neyin Var? :worried:');
+  }
+  if (msg.content === 'merhaba') {
+    msg.reply('Merhaba! :hugging:');
+  }
+  if (msg.content === 'Buğra') {
+    msg.reply('Efendim :blush:');
+  }
+  if (msg.content === 'bugi') {
+    msg.reply('Efendim :blush:');
+  };
+  if (msg.content === 'bura') {
+    msg.reply('Efendim :blush:');
+  }
+  if (msg.content === 'naber') {
+    msg.reply('İyilik.Sen Naber? :upside_down:');
+  }
+  if (msg.content === 'Selamun aleyküm') {
+    msg.reply('Aleyküm Selam');
+  }
+  if (msg.content === 'Selamun aleykum') {
+    msg.reply('Aleyküm Selam');
   }
 });
 
-client.on('guildMemberAdd', member => {
-  setTimeout(function(){
-    member.send('Merhabaaa :blush: Diğerleri gibi satirlarca yazmaya gerek yok.Samimi bi aile ortami var.Oyun sohbet sunucusudur ve sende davetlisin :wink:\nhttps://discord.gg/YUD7pct https://imgur.com/bvTdOGI');
-   }, 10000);
-});
-
-client.on('guildMemberRemove', member => {
-  setTimeout(function(){
-    member.send('Merhabaaa :blush: Diğerleri gibi satirlarca yazmaya gerek yok.Samimi bi aile ortami var.Oyun sohbet sunucusudur ve sende davetlisin :wink:\nhttps://discord.gg/YUD7pct https://imgur.com/bvTdOGI');
-   }, 10000);
-});
-
-client.login(process.env.BOT_TOKEN);
+client.login('Mjg0MDEyOTA0MjEzMjUwMDQ4.DjTvGA.rDFFakoA7wz6K_5jTv2xltJGjiY');

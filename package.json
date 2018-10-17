@@ -1,14 +1,14 @@
 {
-  "name": "chibiusa",
+  "name": "b",
   "version": "0.0.1",
-  "description": "sex kölesi",
+  "description": "",
   "main": "bot.js",
   "scripts": {
     "test": "node bot.js"
   },
-  "author": "Buğra",
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^11.4.2"
+    "discord.js": "^11.3.2"
   }
 }
