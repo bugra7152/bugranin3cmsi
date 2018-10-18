@@ -42,4 +42,4 @@ client.on('message', msg => {
   }
 });
 
-client.login('Mjg0MDEyOTA0MjEzMjUwMDQ4.DjTvGA.rDFFakoA7wz6K_5jTv2xltJGjiY');
+client.login('kapalı');
