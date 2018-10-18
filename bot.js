@@ -25,26 +25,14 @@ client.on('message', msg => {
     if (msg.content === 'selamlar') {
     msg.reply('Aleyküm Selam');
   }
-  if (msg.content === 'iyi') {
-    msg.reply('Süper O Zaman! :blush:');
-  }
-  if (msg.content === 'kötü') {
-    msg.reply(' Niye Yaa? Neyin Var? :worried:');
-  }
-  if (msg.content === 'merhaba') {
-    msg.reply('Merhaba! :hugging:');
-  }
   if (msg.content === 'Buğra') {
-    msg.reply('Efendim :blush:');
+    msg.reply('Efendim');
   }
   if (msg.content === 'bugi') {
-    msg.reply('Efendim :blush:');
+    msg.reply('Efendim');
   };
   if (msg.content === 'bura') {
-    msg.reply('Efendim :blush:');
-  }
-  if (msg.content === 'naber') {
-    msg.reply('İyilik.Senden Naber? :upside_down:');
+    msg.reply('Efendim');
   }
   if (msg.content === 'Selamun aleyküm') {
     msg.reply('Aleyküm Selam');
