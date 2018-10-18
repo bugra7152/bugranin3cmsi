@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('message', msg => {
   if (msg.content === 'sa') {
-    msg.channel.send('Aleyküm Selam');
+    msg.reply('Aleyküm Selam');
   }
 
   if (msg.content === 'Selamın Aleyküm') {
