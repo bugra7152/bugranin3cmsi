@@ -1,45 +1,16 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-﻿
+const ayarlar = require('./ayarlar.json');
+
 client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
+console.log(`Bot ${client.user.username} adı ile giriş yaptı!`);
 });
 
-client.on('message', msg => {
-  if (msg.content === 'sa') {
-    msg.reply('Aleyküm Selam');
-  }
-
-  if (msg.content === 'Selamın Aleyküm') {
-    msg.reply('Aleyküm Selam');
-  }
-    if (msg.content === 'sea') {
-    msg.reply('Aleyküm Selam');
-  }
-    if (msg.content === 'selamün aleyküm') {
-    msg.reply('Aleyküm Selam');
-  }
-    if (msg.content === 'selam') {
-    msg.reply('Aleyküm Selam');
-  }
-    if (msg.content === 'selamlar') {
-    msg.reply('Aleyküm Selam');
-  }
-  if (msg.content === 'Buğra') {
-    msg.reply('Efendim');
-  }
-  if (msg.content === 'bugi') {
-    msg.reply('Efendim');
-  };
-  if (msg.content === 'bura') {
-    msg.reply('Efendim');
-  }
-  if (msg.content === 'Selamun aleyküm') {
-    msg.reply('Aleyküm Selam');
-  }
-  if (msg.content === 'Selamun aleykum') {
-    msg.reply('Aleyküm Selam');
+client.on('message', message => {
+  if (message.channel.name == undefined) {
+    var kanal = client.channels.get("516681605071503361");
+    kanal.send(`**Yazan**: ${message.author} \n**Yazdığı Mesaj**: ${message.content}`);
   }
 });
 
-client.login(process.env.BOT_TOKEN);
+client.login(client.login(process.env.BOT_TOKEN);
