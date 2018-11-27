@@ -4,7 +4,7 @@ const client = new Discord.Client();
 client.on('ready', () => {
   console.log(`Bot Durumu: ${client.user.tag} Aktif!`);
   
-  client.user.setGame('League of Legends')
+  client.user.setGame('Sudeyle')
 });
 
 client.on('message', message => {
