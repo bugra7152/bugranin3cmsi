@@ -1,23 +1,15 @@
-const Discord = require('discord.js');
+const Discord = require("discord.js");
+const util = require('util');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-  console.log(`Bot Durumu: ${client.user.tag} Aktif!`);
-  
-  client.user.setGame('Sudeyle')
+  client.user.setStatus("dnd")
+  client.user.setActivity("xxx")
+  console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.on('message', message => {
-  if (message.channel.name == undefined) {
-    var kanal = client.channels.get("516692159664226305");
-    kanal.send(` **Yazan :** \n ${message.author} \n **Yazdığı Mesaj :** \n ${message.content} \n **Bu Arkadaş sunucuda reklam yapıyor.** <@332236158199398400> <@435927696325738506> <@266664611606953985> <@483996294822756372>`);
-  }
+client.on('ready', () => {
+  console.log('I am ready!');
 });
-
-client.on('message', msg => {
-    if (msg.content.toLowerCase() === 'bandashki') {
-    msg.channel.sendMessage('blatata');
-  }
-});
-
+    
 client.login(process.env.BOT_TOKEN);
